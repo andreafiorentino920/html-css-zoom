@@ -1,0 +1,142 @@
+/* Reset  */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+/* Common */
+body{
+    background-color: #1a1a1a;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Buttons */
+.btn{
+    background-color: transparent;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    border: none;
+}
+
+.btn.btn-black {
+    background-color: #101010;
+}
+
+.btn.btn-grey {
+    background-color: #212122;
+}
+
+.btn.btn-nav{
+    text-align: center;
+    background: rgb( 34, 34, 34);
+    background: linear-gradient(180deg, rgba(34,34,34,0.8799894957983193) 0%, rgba(3,3,3,1) 100%);
+    border-radius: 0;
+    padding: 10px 10px;
+}
+
+.col-left i, .col-right i{
+    font-size: 60px;
+    color: #2db7ff;
+}
+
+.btn.btn-footer{
+    color: white;
+}
+
+.btn.btn-footer i{
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 15px;
+}
+
+.btn.btn-end{
+    background-color: red;
+    padding: 4px 20px;
+    font-weight: bold;
+}
+
+.btn.btn-footer.btn-active{
+    color: #23d959;
+}
+
+
+
+
+
+/* Header  */
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Main  */
+main{
+    height: calc(100vh - 130px);
+    display: flex;
+    padding: 10px 20px;
+
+}
+
+.col-left, .col-right{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.col-center{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+.col-right{
+    justify-content: flex-end;
+}
+
+.persone{
+    width: calc(20% - 6px);
+    height: 200px;
+    border-radius: 10px;
+    margin: 3px;
+    position: relative;
+    overflow: hidden;
+}
+
+.persone img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nome-persona{
+    bottom: 5px;
+    left: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    position: absolute;
+    color: white;
+    background-color: rgba(1, 1, 1, 0.6);
+}
+
+.nome-persona i{
+    color: red;
+    margin-right: 5px;
+}
+/* Footer  */
+footer{
+    height: 80px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb( 34, 34, 34);
+    background: linear-gradient(180deg, rgba(34,34,34,0.8799894957983193) 0%, rgba(3,3,3,1) 100%);
+}
